@@ -1,0 +1,300 @@
+<div class="fd-accordion">
+  <div class="fd-accordion__label">АЛГОРИТМ ФИНДИРЕКТОРА</div>
+  <h2 class="fd-accordion__title">Как пересчитать стоимость компании</h2>
+  <p class="fd-accordion__lead">
+    Чтобы учесть ключевые факторы, проверьте модель по четырем блокам:
+    EBITDA, DCF, альтернативная доходность и переговорная позиция.
+  </p>
+
+  <div class="fd-accordion__body">
+    <div class="fd-accordion__tabs" role="tablist" aria-label="Как пересчитать стоимость компании">
+      <button class="fd-tab is-active" type="button" data-tab="tab1">
+        <span>1</span>
+        Нормализуйте<br>EBITDA
+      </button>
+
+      <button class="fd-tab" type="button" data-tab="tab2">
+        <span>2</span>
+        Постройте<br>DCF
+      </button>
+
+      <button class="fd-tab" type="button" data-tab="tab3">
+        <span>3</span>
+        Учтите<br>доходность
+      </button>
+
+      <button class="fd-tab" type="button" data-tab="tab4">
+        <span>4</span>
+        Подготовьте<br>план Б
+      </button>
+    </div>
+
+    <div class="fd-accordion__content">
+      <div class="fd-panel is-active" id="tab1">
+        <h3>Нормализуйте EBITDA</h3>
+        <p>
+          В реальных сделках покупатель всегда пересчитывает EBITDA самостоятельно.
+          Он исключает разовые и нерегулярные доходы и расходы, добавляет
+          управленческие расходы собственника и убирает эффекты от нерыночных условий.
+        </p>
+        <p>
+          Например, если компания закупает сырье у аффилированной структуры со скидкой,
+          в отчетности это выглядит как высокая маржинальность. Но для покупателя
+          возникает вопрос: сохранится ли эта скидка после сделки? Если нет, текущую
+          прибыль нужно пересчитывать по рыночной себестоимости.
+        </p>
+      </div>
+
+      <div class="fd-panel" id="tab2">
+        <h3>Стройте консервативную DCF</h3>
+        <p>
+          Исключите оптимистичный рост, который держится на удачном периоде.
+          Проверьте, какие драйверы роста подтверждаются контрактами, портфелем
+          заказов и загрузкой мощностей.
+        </p>
+        <p>
+          Если рост обеспечил разовый спрос, уход конкурентов или временный дефицит,
+          его нельзя автоматически переносить в будущие периоды. В модели лучше
+          показать базовый, стрессовый и восстановительный сценарии.
+        </p>
+      </div>
+
+      <div class="fd-panel" id="tab3">
+        <h3>Учитывайте альтернативную доходность</h3>
+        <p>
+          Покупатель сравнивает бизнес не только с компаниями-аналогами, но и с
+          альтернативными инструментами: депозитами, облигациями, недвижимостью
+          и собственным развитием.
+        </p>
+        <p>
+          Если бизнес зарабатывает меньше, чем безрисковые инструменты с поправкой
+          на риски, покупатель предложит цену ниже ожиданий продавца. Поэтому в
+          модели важно показать не только прибыль, но и свободный денежный поток,
+          доходность капитала и премию за риск.
+        </p>
+      </div>
+
+      <div class="fd-panel" id="tab4">
+        <h3>Готовьте план Б</h3>
+        <p>
+          Если у собственника есть возможность не продавать бизнес, а развивать его
+          дальше, его позиция на переговорах намного сильнее.
+        </p>
+        <p>
+          План Б может включать самостоятельное развитие, привлечение партнера,
+          продажу непрофильных активов или реструктуризацию долгов. Такой сценарий
+          снижает давление покупателя и помогает не соглашаться на чрезмерный дисконт.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .fd-accordion {
+    width: 100%;
+    max-width: 757px;
+    box-sizing: border-box;
+    margin: 28px 0;
+    padding: 22px 18px 24px;
+    background: #e4f4f2;
+    border-top: 3px solid #2f7f7d;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #111;
+  }
+
+  .fd-accordion__label {
+    margin-bottom: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #2f7f7d;
+    text-transform: uppercase;
+  }
+
+  .fd-accordion__title {
+    margin: 0 0 8px;
+    font-size: 30px;
+    line-height: 1.05;
+    font-weight: 700;
+  }
+
+  .fd-accordion__lead {
+    max-width: 650px;
+    margin: 0 0 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.45;
+    color: #4d5b5b;
+  }
+
+  .fd-accordion__body {
+    display: grid;
+    grid-template-columns: 155px 1fr;
+    gap: 18px;
+    align-items: stretch;
+  }
+
+  .fd-accordion__tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .fd-tab {
+    display: grid;
+    grid-template-columns: 34px 1fr;
+    gap: 10px;
+    align-items: center;
+    min-height: 58px;
+    padding: 10px 12px;
+    border: 1px solid #2f7f7d;
+    border-radius: 14px;
+    background: #f6fbfa;
+    color: #263333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.15;
+    font-weight: 700;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .fd-tab span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    background: #2f7f7d;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 700;
+  }
+
+  .fd-tab.is-active {
+    background: #2f7f7d;
+    color: #fff;
+    border-color: #2f7f7d;
+  }
+
+  .fd-tab.is-active span {
+    background: #fff;
+    color: #2f7f7d;
+  }
+
+  .fd-accordion__content {
+    position: relative;
+    padding-left: 16px;
+    border-left: 5px solid #2f7f7d;
+  }
+
+  .fd-panel {
+    display: none;
+    min-height: 270px;
+    box-sizing: border-box;
+    padding: 24px 28px;
+    border-radius: 18px;
+    background: #fff;
+  }
+
+  .fd-panel.is-active {
+    display: block;
+  }
+
+  .fd-panel h3 {
+    margin: 0 0 14px;
+    font-size: 26px;
+    line-height: 1.15;
+    font-weight: 700;
+    color: #2f7f7d;
+  }
+
+  .fd-panel p {
+    margin: 0 0 14px;
+    font-size: 18px;
+    line-height: 1.45;
+  }
+
+  .fd-panel p:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 640px) {
+    .fd-accordion {
+      padding: 20px 14px;
+    }
+
+    .fd-accordion__title {
+      font-size: 25px;
+    }
+
+    .fd-accordion__body {
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    .fd-accordion__tabs {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+
+    .fd-tab {
+      min-height: 54px;
+      padding: 9px 10px;
+      font-size: 13px;
+    }
+
+    .fd-accordion__content {
+      padding-left: 0;
+      border-left: 0;
+      border-top: 5px solid #2f7f7d;
+      padding-top: 14px;
+    }
+
+    .fd-panel {
+      min-height: auto;
+      padding: 20px 18px;
+    }
+
+    .fd-panel h3 {
+      font-size: 23px;
+    }
+
+    .fd-panel p {
+      font-size: 16px;
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    const wrapper = document.querySelector('.fd-accordion');
+    if (!wrapper) return;
+
+    const tabs = wrapper.querySelectorAll('.fd-tab');
+    const panels = wrapper.querySelectorAll('.fd-panel');
+
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        const target = tab.getAttribute('data-tab');
+
+        tabs.forEach(function (item) {
+          item.classList.remove('is-active');
+        });
+
+        panels.forEach(function (panel) {
+          panel.classList.remove('is-active');
+        });
+
+        tab.classList.add('is-active');
+        wrapper.querySelector('#' + target).classList.add('is-active');
+      });
+    });
+  })();
+</script>
