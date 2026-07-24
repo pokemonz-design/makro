@@ -31,60 +31,68 @@
 
     <div class="fd-accordion__content">
       <div class="fd-panel is-active" id="tab1">
-        <h3>Нормализуйте EBITDA</h3>
-        <p>
-          В реальных сделках покупатель всегда пересчитывает EBITDA самостоятельно.
-          Он исключает разовые и нерегулярные доходы и расходы, добавляет
-          управленческие расходы собственника и убирает эффекты от нерыночных условий.
-        </p>
-        <p>
-          Например, если компания закупает сырье у аффилированной структуры со скидкой,
-          в отчетности это выглядит как высокая маржинальность. Но для покупателя
-          возникает вопрос: сохранится ли эта скидка после сделки? Если нет, текущую
-          прибыль нужно пересчитывать по рыночной себестоимости.
-        </p>
+        <div class="fd-panel__scroll">
+          <h3>Нормализуйте EBITDA</h3>
+          <p>
+            В реальных сделках покупатель всегда пересчитывает EBITDA самостоятельно.
+            Он исключает разовые и нерегулярные доходы и расходы, добавляет
+            управленческие расходы собственника и убирает эффекты от нерыночных условий.
+          </p>
+          <p>
+            Например, если компания закупает сырье у аффилированной структуры со скидкой,
+            в отчетности это выглядит как высокая маржинальность. Но для покупателя
+            возникает вопрос: сохранится ли эта скидка после сделки? Если нет, текущую
+            прибыль нужно пересчитывать по рыночной себестоимости.
+          </p>
+        </div>
       </div>
 
       <div class="fd-panel" id="tab2">
-        <h3>Стройте консервативную DCF</h3>
-        <p>
-          Исключите оптимистичный рост, который держится на удачном периоде.
-          Проверьте, какие драйверы роста подтверждаются контрактами, портфелем
-          заказов и загрузкой мощностей.
-        </p>
-        <p>
-          Если рост обеспечил разовый спрос, уход конкурентов или временный дефицит,
-          его нельзя автоматически переносить в будущие периоды. В модели лучше
-          показать базовый, стрессовый и восстановительный сценарии.
-        </p>
+        <div class="fd-panel__scroll">
+          <h3>Стройте консервативную DCF</h3>
+          <p>
+            Исключите оптимистичный рост, который держится на удачном периоде.
+            Проверьте, какие драйверы роста подтверждаются контрактами, портфелем
+            заказов и загрузкой мощностей.
+          </p>
+          <p>
+            Если рост обеспечил разовый спрос, уход конкурентов или временный дефицит,
+            его нельзя автоматически переносить в будущие периоды. В модели лучше
+            показать базовый, стрессовый и восстановительный сценарии.
+          </p>
+        </div>
       </div>
 
       <div class="fd-panel" id="tab3">
-        <h3>Учитывайте альтернативную доходность</h3>
-        <p>
-          Покупатель сравнивает бизнес не только с компаниями-аналогами, но и с
-          альтернативными инструментами: депозитами, облигациями, недвижимостью
-          и собственным развитием.
-        </p>
-        <p>
-          Если бизнес зарабатывает меньше, чем безрисковые инструменты с поправкой
-          на риски, покупатель предложит цену ниже ожиданий продавца. Поэтому в
-          модели важно показать не только прибыль, но и свободный денежный поток,
-          доходность капитала и премию за риск.
-        </p>
+        <div class="fd-panel__scroll">
+          <h3>Учитывайте альтернативную доходность</h3>
+          <p>
+            Покупатель сравнивает бизнес не только с компаниями-аналогами, но и с
+            альтернативными инструментами: депозитами, облигациями, недвижимостью
+            и собственным развитием.
+          </p>
+          <p>
+            Если бизнес зарабатывает меньше, чем безрисковые инструменты с поправкой
+            на риски, покупатель предложит цену ниже ожиданий продавца. Поэтому в
+            модели важно показать не только прибыль, но и свободный денежный поток,
+            доходность капитала и премию за риск.
+          </p>
+        </div>
       </div>
 
       <div class="fd-panel" id="tab4">
-        <h3>Готовьте план Б</h3>
-        <p>
-          Если у собственника есть возможность не продавать бизнес, а развивать его
-          дальше, его позиция на переговорах намного сильнее.
-        </p>
-        <p>
-          План Б может включать самостоятельное развитие, привлечение партнера,
-          продажу непрофильных активов или реструктуризацию долгов. Такой сценарий
-          снижает давление покупателя и помогает не соглашаться на чрезмерный дисконт.
-        </p>
+        <div class="fd-panel__scroll">
+          <h3>Готовьте план Б</h3>
+          <p>
+            Если у собственника есть возможность не продавать бизнес, а развивать его
+            дальше, его позиция на переговорах намного сильнее.
+          </p>
+          <p>
+            План Б может включать самостоятельное развитие, привлечение партнера,
+            продажу непрофильных активов или реструктуризацию долгов. Такой сценарий
+            снижает давление покупателя и помогает не соглашаться на чрезмерный дисконт.
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -94,9 +102,11 @@
   .fd-accordion {
     width: 100%;
     max-width: 757px;
+    height: 530px;
     box-sizing: border-box;
     margin: 28px 0;
-    padding: 22px 18px 24px;
+    padding: 18px 18px 20px;
+    overflow: hidden;
     background: #e4f4f2;
     border-top: 3px solid #2f7f7d;
     font-family: Georgia, "Times New Roman", serif;
@@ -104,9 +114,9 @@
   }
 
   .fd-accordion__label {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 1.2;
     font-weight: 700;
     letter-spacing: 0.08em;
@@ -115,18 +125,18 @@
   }
 
   .fd-accordion__title {
-    margin: 0 0 8px;
-    font-size: 30px;
-    line-height: 1.05;
+    margin: 0 0 6px;
+    font-size: 28px;
+    line-height: 1.02;
     font-weight: 700;
   }
 
   .fd-accordion__lead {
     max-width: 650px;
-    margin: 0 0 22px;
+    margin: 0 0 16px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 1.45;
+    font-size: 15px;
+    line-height: 1.35;
     color: #4d5b5b;
   }
 
@@ -135,28 +145,29 @@
     grid-template-columns: 155px 1fr;
     gap: 18px;
     align-items: stretch;
+    height: 365px;
   }
 
   .fd-accordion__tabs {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 9px;
   }
 
   .fd-tab {
     display: grid;
-    grid-template-columns: 34px 1fr;
-    gap: 10px;
+    grid-template-columns: 32px 1fr;
+    gap: 9px;
     align-items: center;
-    min-height: 58px;
-    padding: 10px 12px;
+    min-height: 55px;
+    padding: 9px 11px;
     border: 1px solid #2f7f7d;
     border-radius: 14px;
     background: #f6fbfa;
     color: #263333;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 1.15;
+    font-size: 13px;
+    line-height: 1.12;
     font-weight: 700;
     text-align: left;
     cursor: pointer;
@@ -166,12 +177,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 29px;
-    height: 29px;
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
     background: #2f7f7d;
     color: #fff;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1;
     font-weight: 700;
   }
@@ -188,36 +199,59 @@
   }
 
   .fd-accordion__content {
-    position: relative;
+    min-height: 0;
     padding-left: 16px;
     border-left: 5px solid #2f7f7d;
+    overflow: hidden;
   }
 
   .fd-panel {
     display: none;
-    min-height: 270px;
+    height: 100%;
     box-sizing: border-box;
-    padding: 24px 28px;
     border-radius: 18px;
     background: #fff;
+    overflow: hidden;
   }
 
   .fd-panel.is-active {
     display: block;
   }
 
+  .fd-panel__scroll {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 22px 26px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .fd-panel__scroll::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  .fd-panel__scroll::-webkit-scrollbar-track {
+    background: #e4f4f2;
+    border-radius: 10px;
+  }
+
+  .fd-panel__scroll::-webkit-scrollbar-thumb {
+    background: #2f7f7d;
+    border-radius: 10px;
+  }
+
   .fd-panel h3 {
-    margin: 0 0 14px;
-    font-size: 26px;
-    line-height: 1.15;
+    margin: 0 0 12px;
+    font-size: 25px;
+    line-height: 1.12;
     font-weight: 700;
     color: #2f7f7d;
   }
 
   .fd-panel p {
-    margin: 0 0 14px;
-    font-size: 18px;
-    line-height: 1.45;
+    margin: 0 0 13px;
+    font-size: 17px;
+    line-height: 1.38;
   }
 
   .fd-panel p:last-child {
@@ -226,16 +260,24 @@
 
   @media (max-width: 640px) {
     .fd-accordion {
-      padding: 20px 14px;
+      height: 530px;
+      padding: 16px 14px;
     }
 
     .fd-accordion__title {
-      font-size: 25px;
+      font-size: 24px;
+    }
+
+    .fd-accordion__lead {
+      font-size: 14px;
+      line-height: 1.3;
+      margin-bottom: 12px;
     }
 
     .fd-accordion__body {
       grid-template-columns: 1fr;
-      gap: 14px;
+      gap: 12px;
+      height: 360px;
     }
 
     .fd-accordion__tabs {
@@ -245,29 +287,30 @@
     }
 
     .fd-tab {
-      min-height: 54px;
-      padding: 9px 10px;
-      font-size: 13px;
+      min-height: 48px;
+      padding: 8px 9px;
+      font-size: 12px;
     }
 
     .fd-accordion__content {
+      min-height: 0;
       padding-left: 0;
       border-left: 0;
       border-top: 5px solid #2f7f7d;
-      padding-top: 14px;
+      padding-top: 12px;
     }
 
-    .fd-panel {
-      min-height: auto;
-      padding: 20px 18px;
+    .fd-panel__scroll {
+      padding: 18px 16px;
     }
 
     .fd-panel h3 {
-      font-size: 23px;
+      font-size: 22px;
     }
 
     .fd-panel p {
-      font-size: 16px;
+      font-size: 15px;
+      line-height: 1.35;
     }
   }
 </style>
